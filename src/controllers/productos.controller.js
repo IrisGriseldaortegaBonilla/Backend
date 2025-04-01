@@ -20,7 +20,7 @@ export const obtenerProducto = async (req, res) => {
     
     if (result.length <= 0) {
       return res.status(404).json({
-        mensaje: `Error al leer los datos. El ID ${req.params.id} del producto no fue encontrado.`
+        mensaje: 'Error al leer los datos. El ID ${req.params.id} del producto no fue encontrado.'
       });
     }
     res.json(result[0]);
